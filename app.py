@@ -25,7 +25,7 @@ with st.sidebar:
     """)
 
 # Title and description
-st.title("📄 AI-Powered Legal Document Simplifier")
+st.title("📄 Legal Document Simplifier")
 st.subheader("Upload a legal document to get a clear, structured summary")
 
 # File uploader
@@ -53,17 +53,17 @@ if simplify_button:
         if doc_text.strip() == "":
             st.error("The uploaded document is empty!")
         else:
-            with st.spinner("🔍 Simplifying document..."):
+            with st.spinner(" Simplifying document..."):
                 simplified_text = simplify_legal_text(doc_text)
 
-            st.success("✅ Document Summary Generated")
+            st.success(" Document Summary Generated")
 
             # Full AI summary
-            st.markdown("## 📝 Full AI-Generated Summary")
+            st.markdown("##  Full AI-Generated Summary")
             st.text_area("Full Summary", value=simplified_text, height=300)
 
             # Interactive cards and sections
-            st.markdown("## 🎯 Structured Summary")
+            st.markdown("##  Structured Summary")
             
             col1, col2 = st.columns(2)
 

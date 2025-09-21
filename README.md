@@ -67,9 +67,10 @@ source venv/bin/activate
 venv\Scripts\activate
 ```
 ### Usage
-## Install dependencies
+#### Install dependencies
+```
 pip install -r requirements.txt
-
+```
 - Run the Streamlit app:
 ```
 - streamlit run app.py
@@ -80,13 +81,16 @@ pip install -r requirements.txt
 - Click “Simplify Document”.
 - The simplified summary appears, showing key clauses, terms, and risks in a clean format.
 
-### Project Structure
-- File / Folder	Description
-app.py	Main Streamlit app UI
-simplifier.py	Core logic for simplifying legal text (AI or rule-based processing)
-requirements.txt	Python dependencies
-venv/	Virtual environment (should be .gitignored, not pushed to GitHub)
-.env	(Optional) API keys or environment variables
+## Project Structure
+
+| File / Folder      | Description                                                                 |
+|--------------------|-----------------------------------------------------------------------------|
+| `app.py`           | Main Streamlit app UI                                                      |
+| `simplifier.py`    | Core logic for simplifying legal text (AI or rule-based processing)         |
+| `requirements.txt` | Python dependencies                                                        |
+| `venv/`            | Virtual environment (should be `.gitignore`d, not pushed to GitHub)         |
+| `.env`             | (Optional) API keys or environment variables                                |
+
 
 ### Contributing
 
